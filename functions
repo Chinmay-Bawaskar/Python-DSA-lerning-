@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb 16 09:13:31 2023
+
+@author: chimnay
+"""
+
+#definign function 
+
+def cal_mul(x,y):
+    s=x*y
+    s1=x+y
+    return s,s1
+
+#x and y are foramal parameters 
+
+a=5
+b=6
+mu=cal_mul(a,b)
+print(mu)
+
+#postional arguments -order/type has to match 
+#keyword arguments -order need not match
+#when assigend at time of calling like 
+
+def cal_mul(i,f,st):
+    s=i+f
+    up=st.upper()
+    return s,up
+i=3
+out=cal_mul(10,f=10.23,st='ram')
+print(out)
+#rule:- always write positional frst then keyword 
+
+#default argument
+def torf(cod=True):
+    if cod==True:
+        print('true')
+    else:
+        print('false')
+    
+torf()
+torf(False)
