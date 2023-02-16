@@ -1,0 +1,64 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb 15 11:08:13 2023
+
+@author: chimnay
+"""
+#how to define
+dit={'one':1,'two':2}
+print(dit)
+
+#after iterating gives keys 
+for ele in dit:
+    print(ele)
+print(dit['one'])
+
+#can be accesed by index as key (use string)
+dit['one']=2
+print(dit)
+
+#by using items function we can get output as keys and values saperately 
+for k,v in dit.items():
+    print(k,v)
+
+#for only keys we have keys function 
+for k in dit.keys():
+    print(k,dit[k])
+    
+#upadte is used for concaganating dictionary 
+a={1,2,3}
+b={3,4,5}
+a.update(b)
+print(a)
+
+#it sorts by keys 
+dct={'z':10,'b':2000,'c':3}
+m=max(dct.values())
+print(m)
+newdct=sorted(dct.items())
+print(newdct)
+
+#.clear() is used to make it empty
+a={'a':1}
+b={'b':2}
+c={'c':3}
+
+a.update(b)
+a.update(c)
+print(a)
+
+b.clear()
+c.clear()
+#to check if its empty or not we can use not (gives true or false)
+print(not b)
+print(not c)
+
+#dct1={key:value for (key,value) in dct1.items() []}
+dct1={key:value for (key,value) in a.items() if key=='a'}
+print(dct1)
+
+d={'a':1,'b':{'c':3}}
+d['b']['c']=4
+print(d['b']['c'])
+
+#pending problem 
