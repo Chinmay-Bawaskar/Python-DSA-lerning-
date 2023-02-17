@@ -4,7 +4,7 @@ Created on Thu Feb 16 09:13:31 2023
 
 @author: chimnay
 """
-
+'''
 #definign function 
 
 def cal_mul(x,y):
@@ -41,3 +41,21 @@ def torf(cod=True):
     
 torf()
 torf(False)
+'''
+#variable lenght arguments 
+def pvar_arg(*lst):
+    for var in lst:
+        print(var)
+
+#postional type 
+#keyword type 
+#varible length positional 
+#varible length keyword
+
+def mix_arg(i,j,*lst):
+    print(i,j)
+    for var in lst:
+        print(var)
+mix_arg(1,2,'ram','shayam')
+#default arguments where they will go?
+
