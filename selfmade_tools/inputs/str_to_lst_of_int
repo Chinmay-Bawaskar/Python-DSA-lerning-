@@ -1,0 +1,7 @@
+#input code for getting a string to lst of ints
+str_in=input('insert list with space sepereation ')
+str_lst=str_in.split()
+int_lst=[]
+for ele in str_lst:
+    int_lst.append(int(ele))
+print(int_lst)
